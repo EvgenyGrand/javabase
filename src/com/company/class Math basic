@@ -1,0 +1,15 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double x = sc.nextDouble();
+        double y=sc.nextDouble();
+        System.out.println(Math.sqrt(x));
+        System.out.println(Math.abs(x));
+        System.out.println(Math.pow(x,5));
+        System.out.println(Math.max(x,y));
+        System.out.println(Math.floor(x));
+        System.out.println(Math.ceil(y));
+    }
+}
