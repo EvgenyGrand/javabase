@@ -1,0 +1,34 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String a = "text";
+        String b = "TEXT";
+        System.out.println(a.equals(b));
+        System.out.println();
+        System.out.println(a.equalsIgnoreCase(b));
+        System.out.println();
+        String c = "TeXt";
+        System.out.println(c.toLowerCase());
+        System.out.println(c.toUpperCase());
+        System.out.println(c.charAt(1));
+        System.out.println(c.indexOf("Xt"));
+        System.out.println();
+        String d = "Hello, World!";
+        System.out.println(d.contains("Hello"));
+        System.out.println(d.length());
+        System.out.println(d.startsWith("HI"));
+        System.out.println(d.endsWith("!"));
+        System.out.println();
+        String x = "Событие : %s произошло в %d году";
+        int age = 1943;
+        String name = "Курская битва";
+        System.out.println(String.format(x, name, age));
+        String y = "30";
+        int str = Integer.parseInt(y);
+        System.out.println(str * 3);
+        String z = "Hello,World!";
+        System.out.println(z.substring(0,z.length()-6));
+    }
+}
