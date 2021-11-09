@@ -1,0 +1,18 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        if (i > 50) {
+            System.out.println("i>50");
+            if (i > 90) {
+                System.out.println("i>90");
+            } else {
+                System.out.println("i<=90");
+            }
+        } else {
+            System.out.println("i<=50");
+        }
+    }
+}
