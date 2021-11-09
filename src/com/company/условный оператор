@@ -1,0 +1,19 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+      int age =sc.nextInt();
+      if(age<18) {
+          System.out.println("Ребенок");
+      }else if(age>=18&&age<40) {
+          System.out.println("Молодой");
+      }else if(age>=40&&age<65){
+          System.out.println("Зрелый");
+      }else if(age>=65&&age<75) {
+          System.out.println("Пожилой");
+      }else {
+          System.out.println("Старческий");
+        }
+    }
+}
