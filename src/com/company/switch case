@@ -1,0 +1,21 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       String i = sc.nextLine();
+        switch (i) {
+            case "Titan":
+                System.out.println("metan");
+                break;
+            case "Venera":
+                System.out.println("carbon dioxide");
+                break;
+            case "Earth":
+                System.out.println("oxygen");
+                break;
+            default:
+                System.out.println("Hydrogen");
+        }
+    }
+    }
