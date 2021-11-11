@@ -1,0 +1,28 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class list {
+    public static void main(String[] args) {
+        List<String> citi = new ArrayList<>();
+        citi.add("Oslo");
+        citi.add("Moskow");
+        citi.add("Saratov");
+        citi.add("Sidney");
+        System.out.println(citi.get(1));
+        citi.set(0,"Tomsk");
+        System.out.println(citi.get(0));
+        citi.remove(3);
+        System.out.println(citi.size());
+    Iterator<String>iterator= citi.listIterator();
+        System.out.println(iterator.next());
+        System.out.println(iterator.hasNext());
+        System.out.println();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+    }
+}
