@@ -1,0 +1,17 @@
+class Main{
+    public static void main(String[] args) {
+        Set<String>Planets=new HashSet<>();
+        Planets.add("Mercury");
+        Planets.add("Venera");
+        Planets.add("Earth");
+        Planets.add("Mars");
+        Planets.add("Mars");
+        System.out.println(Planets.size());
+        System.out.println(Planets.contains("Venera"));
+        Iterator<String>iterator= Planets.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+    }
+    }
