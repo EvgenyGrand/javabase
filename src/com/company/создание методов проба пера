@@ -1,0 +1,15 @@
+package com.company;
+public class Main{
+    static String code(String a){
+        if (a.equals("qwerty")) {
+            return "доступ предоставлен";
+        }
+        else {
+            return "в доступе отказано";
+        }
+    }
+
+    public static void main(String[] args){
+        System.out.println(code("123"));
+    }
+}
