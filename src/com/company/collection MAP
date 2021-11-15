@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Map<Integer,String>workers=new HashMap<Integer,String>();
+        workers.put(1,"Alla");
+        workers.put(2,"Arkadii");
+        workers.put(3,"Basil");
+        workers.put(4,"Janna");
+        System.out.println(workers.get(1));
+        System.out.println(workers.size());
+        System.out.println(workers.containsKey(2));
+        System.out.println(workers.containsValue("Janna"));
+        for(Map.Entry<Integer,String>entry:workers.entrySet()){
+            System.out.println(entry.getKey()+"-"+entry.getValue());
+        }
+
+    }
+}
