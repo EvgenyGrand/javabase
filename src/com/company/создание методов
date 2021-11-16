@@ -1,0 +1,19 @@
+package com.company;
+public class Main {
+    public static void main(String[] args) {
+        String a = "Moskow";
+        String b = "Oslo";
+        boolean result =equal(a,b);
+        System.out.println(result);
+
+    }
+
+    static boolean equal(String a, String b) {
+        boolean result;
+       if(a.equals(b)) {
+           return true;
+       }else{
+           return false;
+       }
+    }
+}
