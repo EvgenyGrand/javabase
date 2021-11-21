@@ -1,0 +1,19 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+getall(10,0);
+    }
+    static void getall(int a, int b){
+        int x= 0;
+        try {
+            x = a/b;
+        } catch (Exception e) {
+            System.out.println("We have a problem!");;
+        }
+        finally {
+            System.out.println(x);
+        }
+    }
+}
