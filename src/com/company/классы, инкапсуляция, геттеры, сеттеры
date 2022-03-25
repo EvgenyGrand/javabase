@@ -1,0 +1,50 @@
+public class start {
+    public static void main(String[] args) {
+   computer Apple=new computer(2500,8,"Macbook Air");
+   computer HP = new computer(3500,16,"HP Omen");
+
+   Apple.get_cpu();
+   HP.get_memory();
+   HP.get_name();
+
+    }
+}
+
+
+
+public class computer {
+
+   computer(int cpu, int memory, String name){
+       this.memory=memory;
+       this.cpu=cpu;
+       this.name = name;
+
+
+   }
+
+   private double cpu;
+   private int memory;
+   private String name;
+
+   void get_name(){
+       System.out.println(name);
+   }
+   void get_cpu(){
+       System.out.println(cpu);
+
+   }
+   void  get_memory(){
+       System.out.println(memory);
+   }
+   void setName(){
+       System.out.println(name);
+   }
+}
+
+
+
+
+
+
+
+
