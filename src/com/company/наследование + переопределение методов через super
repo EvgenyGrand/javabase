@@ -1,0 +1,52 @@
+public class Start {
+    public static void main(String[] args) {
+        Cow burenka = new Cow("MMoooyyyooyoy",36);
+
+        burenka.muu();
+
+
+    }
+}
+
+
+public class Animal {
+
+  public String getSay() {
+    return Say;
+  }
+
+  public void setSay(String say) {
+    Say = say;
+  }
+
+  public int getTooth() {
+    return Tooth;
+  }
+
+  public void setTooth(int tooth) {
+    Tooth = tooth;
+  }
+
+  private String Say = "----";
+   private int Tooth = 0;
+
+
+}
+
+
+public class Cow extends Animal {
+
+
+    public Cow(String say, int tooth) {
+        setSay(say);
+        setTooth(tooth);
+
+    }
+    public String getSay(){
+        String say=super.getSay();
+        return say + " moomoomoo!!!!";
+    }
+
+    void muu(){
+    System.out.println(getSay() + " во все "+ getTooth()+" зубов");
+}
