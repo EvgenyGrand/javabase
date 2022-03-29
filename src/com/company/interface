@@ -1,0 +1,43 @@
+public class start {
+    public static void main(String[] args) {
+        Boy Ivan = new Boy();
+        Girl Lena = new Girl();
+
+
+        Lena.play();
+        Ivan.play();
+
+}
+}
+
+
+public interface Player {
+
+    void play();
+    }
+    
+    
+    public class Boy implements Player{
+
+    public void play() {
+        System.out.println("Play in Super Contra 007");
+    }
+}
+
+public class Girl implements Player{
+
+    public void play() {
+        System.out.println("Play in Barby");
+    }
+}
+
+public class Game {
+
+    public Player player;
+
+    void start (Player,player){
+        player.play();
+    }
+}
+    
+    
