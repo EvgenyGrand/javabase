@@ -1,0 +1,111 @@
+import java.util.concurrent.Callable;
+
+public class start {
+    public static void main(String[] args) {
+
+
+        Triangle Triangle=new Triangle(5,6,7);
+        Circle Circle=new Circle(5);
+        Rectangle Rectangle=new Rectangle(5,4);
+
+
+        Rectangle.get_name();
+        Triangle.get_area();
+        Circle.get_perimetr();
+        
+        
+       
+        
+        
+abstract class Figure{
+    public String name="---";
+    public double pi = 3.14;
+
+    abstract void get_name();
+    abstract void get_perimetr();
+    abstract void  get_area();
+
+}
+
+
+
+public class Triangle extends Figure{
+
+    double a;
+    double b;
+    double c;
+
+    Triangle(double a,double b, double c){
+        name = "Треугольник";
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    void get_name(){
+        System.out.println(name);
+    }
+    void get_perimetr(){
+        System.out.println(a+b+c);
+    }
+    void get_area(){
+        double p = (a+b+c)/2;
+        double s = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        System.out.println(s);
+    }
+}
+
+
+
+
+public class Circle extends Figure{
+
+    double r;
+
+    Circle(double r){
+        name="Круг";
+        this.r=r;
+    }
+    void get_name() {
+        System.out.println(name);
+    }
+
+    void get_perimetr (){
+        System.out.println(2*r*pi);
+    }
+
+    void get_area(){
+        double Rad=pi*r;
+        double step=Math.pow(Rad,2);
+        System.out.println(step);
+    }
+
+
+}
+
+
+
+
+public class Rectangle extends Figure{
+
+    double a;
+    double b;
+
+    Rectangle(double a,double b){
+        name="Прямоугольник";
+        this.a=a;
+        this.b=b;
+    }
+
+    void get_name() {
+        System.out.println(name);
+    }
+    void get_perimetr() {
+        System.out.println((a + b) * 2);
+    }
+    void get_area(){
+        System.out.println(a*b);
+    }
+
+}
+
+
