@@ -1,0 +1,21 @@
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        String name = "Karl";
+        int age = 30;
+
+
+        String result = String.format("my name is %s and my age = %d", name, age);
+        String resultDefault = String.format("my name is " + name + " and my age = " + age);
+        System.out.println(result);
+        System.out.println(resultDefault);
+
+        String formattedString = resultDefault.replaceAll("Karl", "Stas");
+        System.out.println(formattedString);
+
+    }
+
+}
